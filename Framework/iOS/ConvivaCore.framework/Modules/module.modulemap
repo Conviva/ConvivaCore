@@ -1,0 +1,6 @@
+framework module ConvivaCore {
+  umbrella header "ConvivaCore-Regular-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
