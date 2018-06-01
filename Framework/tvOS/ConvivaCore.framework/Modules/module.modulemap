@@ -1,5 +1,5 @@
 framework module ConvivaCore {
-  umbrella header "ConvivaCore-Regular-tvOS-umbrella.h"
+  umbrella header "ConvivaCore-Offline+AD-tvOS-umbrella.h"
 
   export *
   module * { export * }
