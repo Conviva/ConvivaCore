@@ -5,5 +5,6 @@ depending on the video player used by your application.
 |    Modulue          | Player            |                Link                            |
 | -------------       |-----------        |                -----                           |
 | ConvivaAVFoundation | AVPlayer          | https://github.com/Conviva/ConvivaAVFoundation |
+| ConvivaBrightcove   | Brightcove        | https://github.com/Conviva/ConvivaBrightcove   |
 
 
