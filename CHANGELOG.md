@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.0.2 (07/20/2018)
+* Fixes an issue related to attachStreamer
+
 ## 3.0.1 (06/20/2018)
 * Exposes ConvivaAdPlayerState enum to fix the issue with setAdPlayerState API
 
