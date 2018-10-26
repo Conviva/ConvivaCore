@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.3 (10/26/2018)
+* Validated on iOS 12
+* Fixes an issue related to asset name
+
 ## 3.0.2 (07/20/2018)
 * Fixes an issue related to attachStreamer
 
