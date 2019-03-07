@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.4 (03/07/2019)
+* Fixes an issue during CDN switch and multithreading, which affects AVPlayeritem
+* Fixes a multithreading issue when different threads access the event queue
+* Fixes an issue with viewId updates after initially setting the value to nil.
+
 ## 3.0.3 (10/26/2018)
 * Validated on iOS 12
 * Fixes an issue related to asset name
