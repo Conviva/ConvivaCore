@@ -7,7 +7,8 @@
 #if CDN_CAPABLE
 #define CWS_PROTOCOL_VERSION @"2.5"
 #else
-#define CWS_PROTOCOL_VERSION @"2.4"
+// DE-5235 - From ConvivaCore 3.0.6 we are supporting CWS 2.5 Changes (only strMetadata not CDN capability).
+#define CWS_PROTOCOL_VERSION @"2.5"
 #endif
 
 #define PRODUCTION_SERVICE_HOST @"https://cws.conviva.com"

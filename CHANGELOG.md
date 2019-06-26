@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.0.5 (06/28/2019)
+* Includes info.plist files for ConvivaCore framework.
+* Displays log messages to indicate External Bitrate or Internal Bitrate.
+* There are metadata values which need to be updated before first video frame appears (Viewer ID, Stream Type, Player Name, Content Length, Custom Tags).
+* If any/all of these metadata values are not reported at the time of session creation, we log a warning for the same metadata value(s) from this release.
+* If any/all of these metadata values are not reported before first frame appears, we log an error for the same metadata value(s) from this release.
+
 ## 3.0.4 (03/07/2019)
 * Fixes an issue during CDN switch and multithreading, which affects AVPlayeritem
 * Fixes a multithreading issue when different threads access the event queue

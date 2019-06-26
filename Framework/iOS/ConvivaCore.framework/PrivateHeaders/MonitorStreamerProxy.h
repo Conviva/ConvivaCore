@@ -65,6 +65,9 @@
 - (void) setAdBufferLength: (NSInteger) bufferLength;
 #endif
 
+// Fix for DE-5328
+- (BOOL)isUpdateMetadataCalled;
+
 - (void)updateConnectionType;
 - (void)updateMetadata:(ConvivaContentInfo*)newcontentInfo;
 
