@@ -37,7 +37,7 @@
 
 - (void)setContentLength:(NSInteger)contentLength;
 - (void)setBitrate:(int)bitrateKbps;
-
+- (void)setCDNServerIP:(NSString *)cdnServerIP;
 - (void)setStream:(int)bitrateKbps cdn:(NSString *)cdn resource:(NSString *)resource;
 
 - (ConvivaStreamerProxy *)streamerProxy;
@@ -67,7 +67,7 @@
 
 // Fix for DE-5328
 - (BOOL)isUpdateMetadataCalled;
-
+- (BOOL)isRenderedFramesUpdatedAtleastOnce;
 - (void)updateConnectionType;
 - (void)updateMetadata:(ConvivaContentInfo*)newcontentInfo;
 
