@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.6 (08/23/2019)
+* Supports iOS 12.3.
+* Introduces new API to report CDN server IP.
+
+
 ## 3.0.5 (06/28/2019)
 * Includes info.plist files for ConvivaCore framework.
 * Displays log messages to indicate External Bitrate or Internal Bitrate.
