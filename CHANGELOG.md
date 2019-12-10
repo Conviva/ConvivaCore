@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.8 (12/13/2019)
+* Supports Data collection and Data compliance as per GDPR and CCPA.
+* Introduces new API setUserPreferenceForDataCollection() for setting user preferences to opt-out of user data collection.
+* Introduces new API setUserPreferenceForDataDeletion() for setting user preferences to delete previously collected user data.
+
 ## 3.0.7 (10/30/2019)
 * Supports iOS 13.
 

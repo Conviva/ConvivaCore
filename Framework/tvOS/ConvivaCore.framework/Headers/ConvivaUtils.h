@@ -20,9 +20,14 @@ static NSString *const CLIENT_ID_AVAILABLE = @"CLIENT_ID_AVAIL";
  */
 + (void)keepAlive:(BOOL)yes;
 
++ (NSString *)getAdIdentifierWithOldConfiguration:(NSString *)oldFpconf AndNewConfiguration:(NSString *)fpconf;
++ (NSString *)getVendorIdentifierWithOldConfiguration:(NSString *)oldFpconf AndNewConfiguration:(NSString *)fpconf;
++ (NSString *)getOtherIdentifierForTag:(NSString *)tag WithOldConfiguration:(NSString *)oldFpconf AndNewConfiguration:(NSString *)fpconf;
+
 + (NSString *)getClientId;
 + (void)setClientId:(NSString *)clientId;
 + (void)deleteClientId;
++ (NSString *)getClientIdFromUserDefaults;
 
 + (int)randInt;
 
@@ -45,6 +50,15 @@ static NSString *const CLIENT_ID_AVAILABLE = @"CLIENT_ID_AVAIL";
 typedef NS_ENUM(NSInteger, SeekActionType) {
     Seek_Start,
     Seek_End
+};
+
+typedef NS_ENUM(NSInteger, UniqueIdentifier) {
+    UNIQUE_IDENTIFIER_NA = 0,   //  No such ID available on device.
+    UNIQUE_IDENTIFIER_NULL,     //  API to fetch this ID can't be used under current circumstances.
+    UNIQUE_IDENTIFIER_EULA,     //  EULA.
+    UNIQUE_IDENTIFIER_PRIVACY_SETTING,  //  End user prevented to track ID from device privacy settings.
+    UNIQUE_IDENTIFIER_CONVIVA_CONFIG,   //  Conviva Configuration portal prevented to capture this ID.
+    UNIQUE_IDENTIFIER_OPT_OUT   //  End user prevented to track ID & requested to delete all previous data.
 };
 
 //commenting ADID feature, as this code may be reused once the new design is frozen

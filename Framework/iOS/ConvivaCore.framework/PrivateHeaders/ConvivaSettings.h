@@ -5,10 +5,10 @@
 #define BUILD_SVN_REVISION @"2.135.0.34990"
 
 #if CDN_CAPABLE
-#define CWS_PROTOCOL_VERSION @"2.5"
+#define CWS_PROTOCOL_VERSION @"2.6"
 #else
 // DE-5235 - From ConvivaCore 3.0.6 we are supporting CWS 2.5 Changes (only strMetadata not CDN capability).
-#define CWS_PROTOCOL_VERSION @"2.5"
+#define CWS_PROTOCOL_VERSION @"2.6"
 #endif
 
 #define PRODUCTION_SERVICE_HOST @"https://cws.conviva.com"
@@ -33,6 +33,9 @@ FOUNDATION_EXPORT NSString *const TYPE_KEY;
 FOUNDATION_EXPORT NSString *const LABEL_KEY;
 FOUNDATION_EXPORT NSString *const LABEL_VALUE_KEY;
 FOUNDATION_EXPORT NSString *const HEADER_KEY;
+FOUNDATION_EXPORT NSString *const FINGER_PRINT_PREFIX;
+FOUNDATION_EXPORT NSString *const AD_IDENTIFIER;
+FOUNDATION_EXPORT NSString *const VENDOR_IDENTIFIER;
 
 
 @interface ConvivaSettings : NSObject
@@ -61,6 +64,14 @@ FOUNDATION_EXPORT NSString *const HEADER_KEY;
 -(void)setDefaultGatewayUrlUsingCustomerKey:(NSString *)customerKey; // This method used to set default gateway url when no gateway url provided by application.
 - (void)changeSettings:(NSDictionary *)settings; // Change the settings based on given dictionary.
 - (void)reset; // Reset settings to default values.
+
+@property(nonatomic, retain, readonly) NSArray *supportedUniqueIdentifiers; //  All Supported unique identifiers in iOS.
+
+@property(nonatomic, retain, readonly) NSDictionary *fingerPrintUserPreferencesForCollection;
+- (void)updateFingerPrintUserPreferencesForCollection:(NSDictionary *)newValue;
+
+@property(nonatomic, retain, readonly) NSDictionary *fingerPrintUserPreferencesForDeletion;
+- (void)updateFingerPrintUserPreferencesForDeletion:(NSDictionary *)newValue;
 
 + (ConvivaSettings *)sharedInstance;
 
