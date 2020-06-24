@@ -1,9 +1,16 @@
 # Changelog
 
+## 3.1.10 (06/25/2020)
+* Support for auto detection of connection type (Ethernet) in tvOS.
+* Bug Fixes.
+
+## 3.0.10 (06/25/2020)
+* Support for auto detection of connection type (Ethernet) in tvOS.
+* Bug Fixes.
+
 ## 3.1.9 (04/22/2020)
 * Fixes an issue where same version is reported for both AdIdentifier enabled and disabled frameworks.
 * Fixes meta data reporting issue
-
 
 ## 3.1.8 (12/13/2019)
 * Supports Data collection and Data compliance as per GDPR and CCPA.Advertising identifier support is not available.

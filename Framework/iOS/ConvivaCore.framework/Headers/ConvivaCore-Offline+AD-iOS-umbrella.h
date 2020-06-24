@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "ConvivaAdProtocol.h"
 #import "ConvivaContentInfo.h"
 #import "ConvivaLightSession.h"
 #import "ConvivaLogger.h"
