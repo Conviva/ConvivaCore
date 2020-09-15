@@ -1,5 +1,17 @@
 # Changelog
 
+## 3.1.11 (09/15/2020)
+* Fixes crash on changing custom tags in ContentInfo object which was not thread safe
+* Using Network.framework to detect connection type for iOS 12 and above
+* Using latest api "serviceCurrentRadioAccessTechnology" from CoreTelephony framework to detect cellular connection type for iOS 13 and above
+* Does not collect Advertising identifier(IDFA)
+
+## 3.0.11 (09/15/2020)
+* Fixes crash on changing custom tags in ContentInfo object which was not thread safe
+* Using Network.framework to detect connection type for iOS 12 and above
+* Using latest api "serviceCurrentRadioAccessTechnology" from CoreTelephony framework to detect cellular connection type for iOS 13 and above
+* Supports Advertising identifier(IDFA) collection
+
 ## 3.1.10 (06/25/2020)
 * Support for auto detection of connection type (Ethernet) in tvOS.
 * Bug Fixes.
