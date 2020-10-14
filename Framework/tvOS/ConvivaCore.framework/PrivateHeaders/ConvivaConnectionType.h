@@ -13,7 +13,7 @@
 
 + (ConvivaConnectionType *)sharedInstance;
 - (void)updateInterfaceWithReachability;
-- (Boolean)isWifiConnAvailable;
+- (Boolean)isWifiOrEthernetConnAvailable;
 - (void)cleanup;
 
 @end

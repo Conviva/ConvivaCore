@@ -75,6 +75,8 @@ FOUNDATION_EXPORT NSString *const VENDOR_IDENTIFIER;
 
 + (ConvivaSettings *)sharedInstance;
 
+-(BOOL)canAccessAdIdentifier;
+
 #ifdef CDN_CAPABLE
 -(void)updateCDNInterval:(NSNumber *)interval;
 

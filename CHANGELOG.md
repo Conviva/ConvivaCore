@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.1.12 (10/14/2020)
+* Supports iOS 14
+* Using latest api "serviceCurrentRadioAccessTechnology" from CoreTelephony framework to detect cellular connection type for iOS 13 and above
+* Does not collect Advertising Identifier to comply with Apple guide lines
+
+## 3.0.12 (10/14/2020)
+* Supports iOS 14
+* Using latest api "serviceCurrentRadioAccessTechnology" from CoreTelephony framework to detect cellular connection type for iOS 13 and above
+* Using "AppTrackingTransparency" to collect Advertising Identifier from iOS/tvOS 14 and above
+* Supports Advertising identifier collection
+
 ## 3.1.11 (09/15/2020)
 * Fixes crash on changing custom tags in ContentInfo object which was not thread safe
 * Using Network.framework to detect connection type for iOS 12 and above
