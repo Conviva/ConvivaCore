@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.13 (01/15/2021)
+* Fixes an inconsistent crash on network switch(Wifi to Cellular and viceversa)
+* Supports Advertising identifier collection
+
 ## 3.1.12 (10/14/2020)
 * Supports iOS 14
 * Using latest api "serviceCurrentRadioAccessTechnology" from CoreTelephony framework to detect cellular connection type for iOS 13 and above

@@ -19,9 +19,10 @@ typedef enum {
 
 @interface ConvivaNetworkUtils : NSObject {
     BOOL isMonitoring;
-    nw_path_monitor_t monitor;
-    nw_path_t currentPath;
 }
+
+@property (nonatomic, strong) nw_path_monitor_t monitor;
+@property (nonatomic, strong) nw_path_t currentPath;
 
 @property (nonatomic, copy) void (^netStatusChangeHandler)(void);
 

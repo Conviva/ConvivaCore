@@ -95,4 +95,6 @@ typedef NS_ENUM(NSInteger, ErrorSeverity) {
 - (int) currentSessionType;
 #endif
 
+-(int) getInternalSessionId;
+
 @end
