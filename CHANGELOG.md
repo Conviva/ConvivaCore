@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.13 (01/15/2021)
+* Fixes an inconsistent crash on network switch(Wifi to Cellular and viceversa)
+* Does not collect Advertising Identifier to comply with Apple guide lines
+
 ## 3.0.13 (01/15/2021)
 * Fixes an inconsistent crash on network switch(Wifi to Cellular and viceversa)
 * Supports Advertising identifier collection
